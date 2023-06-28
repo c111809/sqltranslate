@@ -1,4 +1,4 @@
-# 把tab转换成txt
+# 把tab转换成txt 1
 import os
 
 # 指定tab文件所在的目录路径
@@ -18,3 +18,4 @@ for filename in os.listdir(tab_dir):
         with open(tab_path, 'r') as tab_file, open(txt_path, 'w') as txt_file:
             for line in tab_file:
                 txt_file.write(line.replace('\t', ','))  # 将tab符替换为逗号
+
